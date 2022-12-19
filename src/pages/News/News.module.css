@@ -1,0 +1,22 @@
+.container{
+    position: relative;
+    width: 100%;
+}
+.title {
+    text-align: center;
+    text-decoration: underline;
+    color: var(--blue-color);
+    font-size: 25px;
+    line-height: 29px;
+    font-weight: 400;
+    padding: 74px 0 56px 0;
+    padding-bottom: 6px;
+}
+.news_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 41px;
+    margin: 20px 0;
+}

@@ -1,0 +1,22 @@
+.container_change{
+    display: flex;
+    gap: 2.5em;
+    margin: 30px 0;
+    color: var(--letter-color);
+    text-align: center;
+}
+.container_change li h2 {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 25px;
+}
+.active {
+    color: var(--blue-color);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px){
+    .container_change li h2 {
+        font-size: 1.2em;
+    }
+}

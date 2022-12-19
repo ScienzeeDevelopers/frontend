@@ -1,0 +1,170 @@
+.create_container{
+    width: 788px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 10px;
+}
+.body {
+    width: 788px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px 0px #ccc;
+}
+.contentFormContainer{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.fileImageContainer{
+    width: 30%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D9D9D9;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;box-shadow: 2px 2px 4px #00000040;
+}
+.fileImage{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.fileImage input {
+    display: none;
+}
+.info_container{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 316px;
+    gap: 10px;
+}
+.info_container label input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 7px;
+}
+
+.container_uploadFile{
+    width: 40%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.uploadFile{
+    width: 140px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--blue-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.uploadFile label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--blue-color);
+    cursor: pointer;
+}
+.uploadFile label input {
+    display: none;
+}
+.select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.select select {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #00000040;
+}
+
+.desc_container{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 26px;
+}
+.description{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/*BTN*/
+.btn_container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 0 20px 0;
+}
+.cancel_btn {
+    cursor: pointer;
+    width: 139px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #8C8C8C;
+    font-weight: 700;
+    color: #8C8C8C;
+    transition: all ease .3s;
+}
+.cancel_btn:hover {
+    background-color: transparent;
+    color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+}
+@media (min-width: 820px) {
+    .create_container {
+        padding: 20px 0 100px 0;
+    }
+}
+@media screen and (max-width: 800px) {
+    .create_container {
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 100px;
+    }
+    .body {
+        width: 100%
+    }
+    .contentFormContainer{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .fileImageContainer{
+        width: 100%;
+    }
+    .info_container{
+        width: 100%;
+        text-align: center;
+    }
+    .container_uploadFile{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .cancel_btn {
+        width: 120px;
+        height: 38px;
+    }
+}

@@ -1,0 +1,43 @@
+.fillter_desktop {
+    width: 210px;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 2px 2px 3px 0 #00000069;
+    position: sticky;
+    top: 20px;
+}
+.fillter_desktop h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.areas, .institution, .citys, .states{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.areas p, .institution p{
+    cursor: pointer;
+    transition: all ease .3s;
+}
+.areas p:hover, .institution p:hover {
+    color: var(--blue-color);
+}
+.states select, .citys input {
+    width: 100%;
+    border: none;
+    padding: 7px 10px;
+}
+.citys input {
+    border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 850px) {
+    .fillter_desktop {
+        display: none;
+    }
+}

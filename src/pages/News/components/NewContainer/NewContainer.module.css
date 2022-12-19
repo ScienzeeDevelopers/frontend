@@ -1,0 +1,32 @@
+.container {
+    width: 790px;
+    height: 245px;
+    padding: 48px 28px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 2px 2px 4px 0 #0000006e;
+}
+.container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.info_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        width: 90%;
+        height: 70%;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+}

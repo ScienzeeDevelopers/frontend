@@ -1,0 +1,138 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.background{
+   padding-top: 96px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-home);
+}
+.info_container {
+    text-align: center;
+    max-width: 1102px;
+    margin-bottom: 53px;
+}
+.info_container h2 {
+    margin-top: 69px;
+    text-align: center;
+    font-size: 32px;
+    color: var(--letter-color);
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.title h1 {
+    color: var(--blue-color);
+    font-size: 54px;
+}
+.texts {
+    margin-top: 50px;
+    max-width: 900px;
+    text-align: left;
+}
+.texts p {
+    margin-bottom: 30px;
+    color: var(--letter-color);
+}
+.button_container{
+    display: flex;
+    gap: 34px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.btn_register{
+    width: 139px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid var(--blue-color);
+    font-weight: 700;
+    color: var(--blue-color);
+    transition: all ease .3s;
+}
+.btn_register:hover {
+    background-color: var(--blue-color);
+    color: #fff;
+    border: none;
+}
+.container_content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 1102px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_content h2 {
+    margin-bottom: 48px;
+    color: var(--blue-color);
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    max-width: 920px;
+}
+.cards_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 56px 25px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .info_container {
+        padding: 0 20px;
+    }
+    .title {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .title h1 {
+        font-size: 40px;
+    }
+    .title img {
+        width: 288px;
+    }
+    .texts {
+        max-width: 700px;
+    }
+    .info_container h2 {
+        font-size: 23px;
+    }
+    .btn_register {
+        width: 120px;
+        height: 38px;
+    }
+    .container_content h2 {
+        font-size: 26px;
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 912px){
+    .info_container {
+        padding: 0 20px;
+    }
+    .title {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .container_content{
+        padding: 0 20px;
+    }
+}

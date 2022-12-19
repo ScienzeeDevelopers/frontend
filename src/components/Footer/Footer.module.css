@@ -1,0 +1,27 @@
+.page_container {
+    width: 100%;
+    background: var(--blue-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 0;
+}
+.list {
+    display: flex;
+    gap: 20px;
+}
+.list li a {
+    color: #fff;
+    transition: all ease .2s;
+}
+.list li a:hover {
+    color: #dedede;
+}
+.icons_list {
+    margin-left: 20px;
+}
+@media (max-width: 912px) {
+    .page_container {
+        display: none;
+    }
+}
